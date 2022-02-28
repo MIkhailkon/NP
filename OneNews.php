@@ -6,6 +6,7 @@ class OneNews
 
     public function __construct(int $id)
     {
+        // Только как пример, работы с БД нет
         $query = 'SELECT * FROM NEWS WHERE id = ' . $id;
         $result = $dbh->query($query);
         while ($row = $result->fetch()) {
